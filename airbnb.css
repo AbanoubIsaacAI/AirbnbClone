@@ -1,0 +1,736 @@
+* {
+  margin: 0;
+  box-sizing: content-box;
+}
+
+.container {
+  margin-inline: 50px;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.spanMarginmaker {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.gray {
+  color: #888888;
+}
+
+.black:hover {
+  color: black;
+}
+
+.p10 {
+  padding: 10px;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+}
+/* start header */
+.header {
+  padding: 20px 0;
+  border-bottom: 1px #ebebeb solid;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 1002;
+}
+
+.headContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.visdiv {
+  display: flex;
+  border: #dddddd 1px solid;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 0px 16px -16px #222222;
+}
+.visdiv:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 25px -16px #222222;
+}
+.visdiv span {
+  padding: 10px;
+}
+
+.visdiv span:not(:last-child):after {
+  content: "";
+  position: relative;
+  height: 10px;
+  padding: 1px;
+  background-color: #888888;
+  right: -15px;
+}
+
+.searchcircletwo {
+  background-color: #ff385c;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 875px) and (min-width: 745px) {
+  .userbtn {
+    width: 90px;
+  }
+
+  .spanMarginmaker {
+    margin-right: 10px;
+  }
+  .visdiv {
+    justify-content: space-evenly;
+    transition: 0.3s;
+  }
+
+  .visdiv span {
+    padding: 10px 4px;
+  }
+  .visdiv span:not(:last-child):after {
+    right: -5px;
+  }
+  .rightcornerhead span {
+    padding: 0;
+    margin: 0;
+  }
+  .rightcornerhead i {
+    margin: 0;
+    padding: 4px;
+  }
+}
+
+.middlespan {
+  position: relative;
+  left: 200px;
+  transition: 0.3s;
+}
+
+@media (max-width: 970px) and (min-width: 745px) {
+  .middlespan {
+    position: relative;
+    left: 160px;
+    top: 50px;
+  }
+
+  .headContainer {
+    padding-bottom: 50px;
+  }
+}
+.searchcircletwo i {
+  margin-top: 5px;
+  text-indent: 2px;
+}
+.rightcornerhead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.userbtn {
+  background-color: white;
+  padding: 5px 15px;
+  border: #dddddd 1px solid;
+  border-radius: 30px;
+}
+.userbtn:hover {
+  cursor: pointer;
+}
+
+.userbtn:hover {
+  box-shadow: 0px 2px 3px 0px #dbdbdb;
+}
+.threelinemenu {
+  list-style: none;
+  padding: 0;
+  display: inline-block;
+  margin-right: 5px;
+  position: relative;
+  top: 5px;
+}
+
+.threelinemenu li {
+  background-color: #595959;
+  height: 2px;
+  width: 15px;
+  margin-bottom: 2px;
+}
+
+.circle {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #6a6a6a;
+}
+.circle i {
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+  transform: translateY(30%);
+}
+
+.backhover:hover {
+  background-color: #f7f7f7;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.hover:hover {
+  cursor: pointer;
+}
+.info {
+  border-radius: 30px;
+  border: 1px solid #dddddd;
+  width: 70%;
+  margin-inline: auto;
+  position: relative;
+  display: flex;
+  box-shadow: 0px 6px 27px -20px #6a6a6a;
+  transition: 0.3s;
+}
+
+.searchDestination {
+  border-radius: 30px;
+  border: none;
+  padding: 30px 0 15px 0;
+  width: 35%;
+  text-indent: 20px;
+}
+.info::before {
+  content: "Where";
+  position: absolute;
+  color: black;
+  top: 12px;
+  left: 20px;
+  font-size: 0.7em;
+  font-weight: bold;
+}
+
+.searchDestination:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+.searchDestination:focus {
+  outline: none;
+}
+
+.check-in,
+.check-out {
+  border-radius: 30px;
+  border: none;
+  font-size: 0.8em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 150px;
+  position: relative;
+}
+.check-in:hover,
+.check-out:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
+.guestsbtn {
+  background-color: white;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 35%;
+  border-radius: 30px;
+  padding-right: 12px;
+}
+@media (max-width: 745px) {
+  .headContainer,
+  .info {
+    display: none;
+  }
+
+  .header {
+    padding: 24px 0;
+  }
+}
+
+.info-translate {
+  transform: translateY(-35px);
+  width: 30%;
+}
+
+.guestsbtn:hover {
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+.searchcircle {
+  background-color: #ff385c;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+
+.searchcircle i {
+  margin-top: 18px;
+}
+.minihead {
+  display: none;
+  visibility: hidden;
+}
+@media (max-width: 745px) {
+  .minihead {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+  }
+  .minihead .minbar {
+    border: 1px solid #dddddd;
+    border-radius: 30px;
+    padding: 10px;
+    text-indent: 5px;
+    width: 90%;
+    cursor: pointer;
+    box-shadow: 0px 1px 26px -15px #222222;
+  }
+  .sliderdiv {
+    border: 1px solid #dddddd;
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    height: 18px;
+    margin-top: 10px;
+  }
+}
+
+.miniscreenmenu {
+  display: none;
+}
+@media (max-width: 745px) {
+  .miniscreenmenu {
+    position: fixed;
+    background-color: white;
+    bottom: 0;
+    padding: 20px;
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border-top: #dbdbdb 1px solid;
+  }
+
+  .mainminidiv div {
+    margin-right: 50px;
+    cursor: pointer;
+  }
+  .mainminidiv div i {
+    font-size: 1.4em;
+  }
+  .mainminidiv div span {
+    font-size: 0.6em;
+  }
+}
+.minihead .minbar {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* end header */
+/* start sticky bar */
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+.stickybar {
+  position: sticky;
+  top: 100px;
+  background-color: white;
+  z-index: 1000;
+}
+.boxshadowdrop {
+  box-shadow: 0px 11px 23px -24px #222222;
+}
+.flexylist {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .flexylist {
+    width: 80%;
+    overflow: hidden;
+  }
+}
+@media (max-width: 778px) {
+  .filter span {
+    display: none;
+  }
+}
+.flexylist li {
+  color: #7e7e7e;
+  margin-right: 20px;
+  padding: 10px 0;
+  cursor: pointer;
+}
+.flexylist li:hover {
+  border-bottom: #7e7e7e 2px solid;
+  color: #222222;
+}
+.flexylist li:first-of-type {
+  margin-left: 20px;
+}
+.flexylist li p {
+  margin-top: 10px;
+}
+.morecircle {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #6a6a6a;
+  text-align: center;
+  font-size: 1.5em;
+}
+.lesscircle {
+  background-color: white;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 1px solid #6a6a6a;
+  text-align: center;
+  font-size: 1.5em;
+  margin-left: 10px;
+  display: none;
+}
+.activeli {
+  color: #222222;
+  border-bottom: #222222 3px solid;
+}
+.blackli {
+  color: #222222;
+}
+
+.lesscircle:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 40px -5px #222222;
+}
+.morecircle:hover {
+  cursor: pointer;
+  box-shadow: 0px 0px 40px -5px #222222;
+}
+.filter {
+  border: 1px solid #888888;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-left: 20px;
+  margin-right: 3px;
+}
+.filter span {
+  margin-left: 2px;
+}
+.filter:hover {
+  background-color: #f7f7f7;
+  border: 1px solid #222222;
+  cursor: pointer;
+}
+
+@media (max-width: 970px) and (min-width: 746px) {
+  .stickybar {
+    top: 150px;
+  }
+}
+/* end sticky bar */
+/*start trip destination */
+.tripdestination {
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+  gap: 20px 30px;
+}
+.tripdestination div img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.trippic .fa-heart {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: white;
+  font-size: 1.3em;
+  transition: 0.3s;
+}
+.trippic .fa-heart:hover {
+  transform: scale(1.1);
+}
+
+.trippic ul {
+  list-style: none;
+  padding: 0;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.trippic ul li {
+  background-color: white;
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.trippic ul li:not(:first-of-type) {
+  opacity: 0.3;
+}
+.trippic ul li:nth-last-of-type(1) {
+  height: 3px;
+  width: 3px;
+}
+.trippic ul li:nth-last-of-type(2) {
+  height: 4px;
+  width: 4px;
+}
+
+/* .trippic div:hover::after {
+  content: ">";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  background-color: transparent;
+  top: 50%;
+  right: 10px;
+  transform: translate(-70%, -50%);
+  opacity: 0.7;
+  font-size: 1.2em;
+} */
+.trippic span {
+  display: none;
+  text-align: center;
+}
+.trippic:hover span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  position: absolute;
+  background-color: white;
+  height: 10px;
+  width: 10px;
+  padding: 10px;
+  border-radius: 50%;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  opacity: 0.6;
+  font-size: 1.2em;
+}
+.trippic span:hover {
+  opacity: 1;
+  transform: scale(1.1) translateY(-50%);
+  cursor: pointer;
+}
+
+.trippic div::after:hover {
+  transform: scale(1.1);
+}
+.fa-star {
+  font-size: 0.7em;
+  margin-right: 3px;
+  color: #222222;
+}
+.trippic p {
+  margin-bottom: 5px;
+}
+.afterphotos {
+  padding: 100px 0;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+.afterphotos p {
+  text-align: center;
+}
+.afterphotos button {
+  background-color: #222222;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  margin-inline: auto;
+  display: block;
+  font-size: 1em;
+  font-weight: bold;
+  margin-top: 20px;
+}
+.afterphotos button:hover {
+  cursor: pointer;
+  background-color: black;
+}
+
+.wbg {
+  background-color: white;
+}
+
+@media (max-width: 685px) {
+  .tripdestination {
+    grid-template-columns: 1fr;
+  }
+  .tripdestination .trippic img {
+    width: 100%;
+  }
+}
+@media (min-width: 686px) {
+  .tripdestination .trippic {
+    width: 250px;
+  }
+}
+/* end trip destination */
+/* start final div */
+.finaldiv {
+  padding-top: 50px;
+  background-color: #f7f7f7;
+}
+.categories {
+  border-bottom: 1px solid #dddddd;
+}
+
+.categories p {
+  font-weight: 600;
+  font-size: 1.4em;
+  padding-bottom: 20px;
+}
+.categories ul {
+  padding: 0;
+  list-style: none;
+}
+.categories ul li {
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+.categories ul li:first-of-type a {
+  color: #222222;
+  padding: 10px;
+  font-weight: bold;
+  border-bottom: #222222 solid 1px;
+}
+.categories ul li a {
+  text-decoration: none;
+  color: #6a6a6a;
+}
+
+.places {
+  padding: 30px 0 50px 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 20px 20px;
+  font-size: 0.8em;
+}
+.places div {
+  cursor: pointer;
+}
+.places p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+hr {
+  border-color: #dddddd;
+}
+
+.links {
+  padding: 50px 0;
+  border-bottom: 1px solid #dddddd;
+}
+.links ul {
+  list-style: none;
+  padding: 0;
+}
+.links p {
+  color: #222222;
+  font-weight: 600;
+  font-size: 0.9em;
+  margin-bottom: 10px;
+}
+.links ul li {
+  margin-bottom: 10px;
+}
+.links ul li a {
+  text-decoration: none;
+  color: #3f3f3f;
+  font-size: 0.8em;
+  font-weight: 500;
+}
+.links ul li a:hover {
+  text-decoration: underline;
+}
+footer {
+  padding: 20px 0;
+}
+footer div span {
+  color: #3f3f3f;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+footer div a {
+  text-decoration: none;
+  color: #3f3f3f;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+footer div span:not(:first-of-type):hover {
+  text-decoration: underline;
+}
+
+footer div a:hover::before {
+  text-decoration: none;
+}
+footer div a::before {
+  content: ".";
+  position: relative;
+  color: #222222;
+  left: -12px;
+  top: -3px;
+}
+/* end final div */
+/* start map */
+.map {
+  background-color: #222222;
+  color: white;
+  width: fit-content;
+  border-radius: 30px;
+  padding: 15px;
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.3s ease;
+}
+
+.map:hover {
+  transform: scale(1.05) translateX(-50%);
+  box-shadow: 0px 1px 35px -15px #222222;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .map {
+    bottom: 100px;
+  }
+}
+/* end map */
+/* start extras*/
+
+/* end extras */

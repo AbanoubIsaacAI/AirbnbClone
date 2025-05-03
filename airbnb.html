@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airbnb</title>
+    <link rel="stylesheet" href="airbnb.css" />
+
+    <link rel="stylesheet" href="/fontawesome-free-6.6.0-web/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- start header -->
+    <div class="header">
+      <div class="container">
+        <div class="headContainer">
+          <div>
+            <img
+              src="imgs/airbnblogo.png"
+              width="100px"
+              alt=""
+              style="cursor: pointer"
+            />
+          </div>
+          <div class="middlespan">
+            <span class="spanMarginmaker hover" style="font-weight: bold"
+              >Stays</span
+            >
+            <span class="gray spanMarginmaker backhover p10 black"
+              >Experiences</span
+            >
+          </div>
+          <div class="visdiv hidden">
+            <div style="font-size: 0.8em">
+              <span>Anywhere</span>
+              <span>Any week</span>
+              <span class="gray" style="display: inline-block">
+                <div style="display: inline-block">Add guests</div>
+                <div class="searchcircletwo" style="display: inline-block">
+                  <i
+                    class="fa-solid fa-magnifying-glass"
+                    style="color: white"
+                  ></i></div
+              ></span>
+            </div>
+          </div>
+          <div class="rightcornerhead">
+            <span
+              class="spanMarginmaker backhover p10"
+              style="font-weight: bold; font-size: 0.8em"
+              >Airbnb your home</span
+            >
+            <i class="fa-solid fa-globe spanMarginmaker backhover p10"></i>
+            <button class="userbtn">
+              <ul class="threelinemenu">
+                <li></li>
+                <li></li>
+                <li></li>
+              </ul>
+              <span class="circle">
+                <i class="fa-solid fa-user"></i>
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="minihead">
+          <div class="minbar flex">
+            <div>
+              <i
+                class="fa-solid fa-magnifying-glass"
+                style="margin-right: 10px; font-size: 1.5em"
+              ></i>
+            </div>
+            <div style="font-size: 0.8em; font-weight: 500">
+              <p>Where to?</p>
+              <span class="gray">Anywhere</span>
+              <span class="gray">Any Week</span>
+              <span class="gray">Add guests</span>
+            </div>
+          </div>
+          <div class="sliderdiv">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+        </div>
+
+        <div class="info">
+          <input
+            type="search"
+            class="searchDestination"
+            placeholder="Search destinations"
+          />
+          <div class="check-in">
+            <p>Check in</p>
+            <p class="gray">Add dates</p>
+          </div>
+          <div class="check-out">
+            <p>Check out</p>
+            <p class="gray">Add dates</p>
+          </div>
+          <button class="guestsbtn">
+            <div>
+              <p style="text-align: start">Who</p>
+              <p class="gray" style="overflow: hidden; white-space: nowrap">
+                Add guests
+              </p>
+            </div>
+            <div class="searchcircle">
+              <i class="fa-solid fa-magnifying-glass" style="color: white"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="miniscreenmenu">
+        <div style="display: flex" class="mainminidiv">
+          <div style="color: #ff385c">
+            <i class="fa-solid fa-magnifying-glass" style="display: block"></i>
+            <span>Explore</span>
+          </div>
+          <div>
+            <i class="fa-regular fa-heart" style="display: block"></i>
+            <span>Wishlists</span>
+          </div>
+          <div>
+            <i class="fa-regular fa-user" style="display: block"></i>
+            <span>Log in</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header -->
+    <!-- start sticky bar -->
+    <div class="stickybar flex" style="overflow: hidden">
+      <span class="lesscircle"> &lt; </span>
+      <ul class="flexylist">
+        <li>
+          <i class="fa-solid fa-ticket"></i>
+          <p>Icons</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-bed"></i>
+          <p>Rooms</p>
+        </li>
+        <li>
+          <i class="fas fa-swimming-pool"></i>
+          <p>Amazing pools</p>
+        </li>
+        <li class="activeli">
+          <i class="fas fa-mountain blackli"></i>
+          <p class="blackli">Amazing views</p>
+        </li>
+        <li>
+          <i class="fas fa-golf-ball"></i>
+          <p>Golfing</p>
+        </li>
+        <li>
+          <i class="fas fa-home"></i>
+          <p>Design</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-shuttle-space"></i>
+          <p>OMG!</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-umbrella-beach"></i>
+          <p>Beachfront</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-fire"></i>
+          <p>Trending</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-snowflake"></i>
+          <p>Arctic</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-water"></i>
+          <p>Islands</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-house-chimney"></i>
+          <p>Tiny homes</p>
+        </li>
+      </ul>
+      <span class="morecircle"> &gt; </span>
+      <button class="filter">
+        <i class="fa-solid fa-sliders"></i><span>Filters</span>
+      </button>
+    </div>
+    <!-- end sticky bar -->
+    <!-- start trip destination -->
+    <div class="container">
+      <div class="tripdestination">
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip1.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Kathisma Beach,Greece</p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </div>
+          <p class="gray">Beach and ocean views</p>
+          <p class="gray">Nov 4-9</p>
+          <p><b>2032$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip2.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Kotor,Montenegro</p>
+            <p><i class="fa-solid fa-star"></i>4.83</p>
+          </div>
+          <p class="gray">Beach and sea views</p>
+          <p class="gray">Nov 21-26</p>
+          <p><b>82$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip3.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Kathisma Beach,Greece</p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </div>
+          <p class="gray">Beach and mountain views</p>
+          <p class="gray">Nov 3-8</p>
+          <p><b>432$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip4.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Santa Marie di Leuca, Italy</p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </div>
+          <p class="gray">Sea and garden views</p>
+          <p class="gray">Nov 4-9</p>
+          <p><b>482$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnb5.webp" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Massa Lubrense, Italy</p>
+            <p><i class="fa-solid fa-star"></i>4.92</p>
+          </div>
+          <p class="gray">Sea views</p>
+          <p class="gray">Apr 1-6</p>
+          <p><b>682$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnb6.webp" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Donja Lastva,Montenegro</p>
+            <p><i class="fa-solid fa-star"></i>4.91</p>
+          </div>
+          <p class="gray">Sea views</p>
+          <p class="gray">Nov 4-9</p>
+          <p><b>42$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip7.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Pula, Italy</p>
+            <p><i class="fa-solid fa-star"></i>4.94</p>
+          </div>
+          <p class="gray">Mountain and sea views</p>
+          <p class="gray">Mar 17-22</p>
+          <p><b>282$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip8.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Orasac,Croatia</p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </div>
+          <p class="gray">Mountain and sea views</p>
+          <p class="gray">Apr 1-8</p>
+          <p><b>482$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip9.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Propriano,France</p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </div>
+          <p class="gray">Mountain and sea views</p>
+          <p class="gray">Nov 3-10</p>
+          <p><b>642$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip10.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Positano, Italy</p>
+            <p><i class="fa-solid fa-star"></i>4.91</p>
+          </div>
+          <p class="gray">Beach and mountain views</p>
+          <p class="gray">Nov 19-24</p>
+          <p><b>182$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip11.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Ostuni, Italy</p>
+            <p><i class="fa-solid fa-star"></i>4.98</p>
+          </div>
+          <p class="gray">Mountain views</p>
+          <p class="gray">Nov 6-11</p>
+          <p><b>252$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip12.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Chorefto,Greece</p>
+            <p><i class="fa-solid fa-star"></i>5.0</p>
+          </div>
+          <p class="gray">Beach and ocean views</p>
+          <p class="gray">Nov 10-15</p>
+          <p><b>512$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip13.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Santorini,Greece</p>
+            <p><i class="fa-solid fa-star"></i>4.96</p>
+          </div>
+          <p class="gray">Sea views</p>
+          <p class="gray">Apr 1-6</p>
+          <p><b>542$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip14.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Gelemis, Turkey</p>
+            <p><i class="fa-solid fa-star"></i>4.89</p>
+          </div>
+          <p class="gray">Beach and mountain views</p>
+          <p class="gray">Nov 8-13</p>
+          <p><b>72$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip15.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Lakonia, Greece</p>
+            <p><i class="fa-solid fa-star"></i>4.98</p>
+          </div>
+          <p class="gray">Sea views</p>
+          <p class="gray">Nov 10-15</p>
+          <p><b>162$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip16.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Areti,Greece</p>
+            <p><i class="fa-solid fa-star"></i>4.99</p>
+          </div>
+          <p class="gray">Sea views</p>
+          <p class="gray">Nov 10-15</p>
+          <p><b>532$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip17.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Xlendi, Malta</p>
+            <p><i class="fa-solid fa-star"></i>4.95</p>
+          </div>
+          <p class="gray">Beach and ocean views</p>
+          <p class="gray">Dec 1-6</p>
+          <p><b>125$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip18.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Heraklion, Greece</p>
+            <p><i class="fa-solid fa-star"></i>5.00</p>
+          </div>
+          <p class="gray">Mountain and sea views</p>
+          <p class="gray">Nov 13-18</p>
+          <p><b>482$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip19.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Paralia Kourna, Greece</p>
+            <p><i class="fa-solid fa-star"></i>4.91</p>
+          </div>
+          <p class="gray">Mountain and sea views</p>
+          <p class="gray">Apr 1-6</p>
+          <p><b>452$</b> night</p>
+        </div>
+        <div class="trippic">
+          <div style="position: relative">
+            <img src="imgs/airbnbtrip20.png" alt="" />
+            <i class="fa-regular fa-heart"></i>
+            <span>&gt;</span>
+            <ul style="position: absolute" class="flex">
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+          <div class="flex" style="justify-content: space-between">
+            <p>Imerovigli,Greece</p>
+            <p><i class="fa-solid fa-star"></i>4.89</p>
+          </div>
+          <p class="gray">Sea views</p>
+          <p class="gray">Nov 11-16</p>
+          <p><b>372$</b> night</p>
+        </div>
+      </div>
+      <div class="afterphotos">
+        <p>Continue exploring amazing views</p>
+        <button>Show more</button>
+      </div>
+    </div>
+    <!-- end trip destination -->
+    <!-- start final div -->
+
+    <div class="finaldiv">
+      <div class="container">
+        <div class="categories">
+          <p>Inspiration for future getaways</p>
+          <div class="flex">
+            <ul class="flex" style="overflow: hidden">
+              <li><a href="">Popular</a></li>
+              <li><a href="">Arts & culture</a></li>
+              <li><a href="">Outdoors</a></li>
+              <li><a href="">Mountains</a></li>
+              <li><a href="">Beach</a></li>
+              <li><a href="">Unique stays</a></li>
+              <li><a href="">Categories</a></li>
+              <li><a href="">Things to do</a></li>
+              <li><a href="">Travel tips & inspiration</a></li>
+              <li><a href="">Airbnb-friendly apartments</a></li>
+            </ul>
+            <div style="position: relative">
+              <span
+                class="morecircle"
+                style="display: inline-block; position: absolute; top: -15px"
+              >
+                &gt;
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="places">
+          <div>
+            <p>Canmore</p>
+            <p class="gray">Apartment rentals</p>
+          </div>
+          <div>
+            <p>Benalmadena</p>
+            <p class="gray">Beach house rentals</p>
+          </div>
+          <div>
+            <p>Marbella</p>
+            <p class="gray">House rentals</p>
+          </div>
+          <div>
+            <p>Mijas</p>
+            <p class="gray">Apartment rentals</p>
+          </div>
+          <div>
+            <p>Prescott</p>
+            <p class="gray">pet-friendly rentals</p>
+          </div>
+          <div>
+            <p>Scottsdale</p>
+            <p class="gray">Condo rentals</p>
+          </div>
+          <div>
+            <p>Tucson</p>
+            <p class="gray">Condo rentals</p>
+          </div>
+          <div>
+            <p>Jasper</p>
+            <p class="gray">Cabin rentals</p>
+          </div>
+          <div>
+            <p>Mountain view</p>
+            <p class="gray">Cabin rentals</p>
+          </div>
+          <div>
+            <p>Devonport</p>
+            <p class="gray">Cottage rentals</p>
+          </div>
+          <div>
+            <p>Mallacoota</p>
+            <p class="gray">Pet-friendly rentals</p>
+          </div>
+          <div>
+            <p>Ibiza</p>
+            <p class="gray">Vacation rentals</p>
+          </div>
+          <div>
+            <p>Anaheim</p>
+            <p class="gray">Family-friendly rentals</p>
+          </div>
+          <div>
+            <p>Montery</p>
+            <p class="gray">Bungalow rentals</p>
+          </div>
+          <div>
+            <p>Paso Robles</p>
+            <p class="gray">Cottage rentals</p>
+          </div>
+          <div>
+            <p>Santa Barbara</p>
+            <p class="gray">Apartment rentals</p>
+          </div>
+          <div>
+            <p>Sonoma</p>
+            <p class="gray">Rental and pools</p>
+          </div>
+          <div>
+            <p>Show more <i class="fa-solid fa-angle-down"></i></p>
+          </div>
+        </div>
+      </div>
+      <hr style="border: none; height: 1px; background-color: #dddddd" />
+      <div class="container">
+        <div
+          class="links flex"
+          style="justify-content: space-between; align-items: start"
+        >
+          <div>
+            <p>Support</p>
+            <ul>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">AirCover</a></li>
+              <li><a href="">Anti-discrimination</a></li>
+              <li><a href="">Disability support </a></li>
+              <li><a href="">Cancellation options </a></li>
+              <li><a href="">Report neighborhood concern</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Hosting</p>
+            <ul>
+              <li><a href="">Airbnb your home</a></li>
+              <li><a href="">AirCover for Hosts</a></li>
+              <li><a href="">Hosting resources</a></li>
+              <li><a href="">Community forum </a></li>
+              <li><a href="">Hosting responsibly </a></li>
+              <li><a href="">Airbnb-friendly apartments</a></li>
+              <li><a href="">Join a free Hosting class</a></li>
+              <li><a href="">Find a co‑host</a></li>
+            </ul>
+          </div>
+          <div>
+            <p>Airbnb</p>
+            <ul>
+              <li><a href="">Newsroom</a></li>
+              <li><a href="">New features </a></li>
+              <li><a href="">Careers</a></li>
+              <li><a href="">Investors</a></li>
+              <li><a href="">Gift cards</a></li>
+              <li><a href="">Airbnb.org emergency stays</a></li>
+            </ul>
+          </div>
+        </div>
+        <footer class="flex" style="justify-content: space-between">
+          <div>
+            <span class="spanMarginmaker">&copy; 2024 Airbnb, Inc.</span>
+            <span class="spanMarginmaker"><a href="">Terms</a></span>
+            <span class="spanMarginmaker"><a href="">Sitemap</a></span>
+            <span class="spanMarginmaker"><a href="">Privacy</a></span>
+            <span class="spanMarginmaker"
+              ><a href=""
+                >Your Privacy Choices
+                <img src="imgs/Screenshot 2024-11-03 220051.png" alt="" /></a
+            ></span>
+          </div>
+          <div>
+            <i class="fa-solid fa-globe" style="cursor: pointer"></i>
+            <span class="spanMarginmaker" style="cursor: pointer"
+              >English (US)</span
+            >
+            <span class="spanMarginmaker" style="cursor: pointer">EGY</span>
+            <div
+              class="flex"
+              style="
+                justify-content: space-between;
+                display: inline-block;
+                font-size: 1.2em;
+                cursor: pointer;
+              "
+            >
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!-- end final div -->
+    <!-- start map -->
+    <div class="map">
+      <p>Show map <i class="fa-solid fa-map"></i></p>
+    </div>
+    <!-- end map -->
+  </body>
+  <script src="airbnb.js"></script>
+</html>
